@@ -1,24 +1,72 @@
-Welcome to the NextJS base template bootstrapped using the `create-next-app`. This template supports TypeScript, but you can use normal JavaScript as well.
+# ALX Listing App
+
+The **ALX Listing App** is the foundation of an Airbnb-style listing page, scaffolded as part of the ALX Software Engineering program. This milestone (Milestone 1) focuses on setting up a modern, production-ready frontend project using **Next.js**, **TypeScript**, **TailwindCSS**, and **ESLint**.
+
+This project emphasizes best practices in frontend architecture, reusable component creation, and structured project organization to ensure scalability and maintainability.
+
+---
+
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Project Structure](#project-structure)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Author](#author)
+
+---
+
+## About the Project
+
+This milestone lays the groundwork for an Airbnb clone. The goal is to:
+
+- Scaffold a clean, modern Next.js app
+- Integrate TypeScript for type safety
+- Set up TailwindCSS for styling
+- Create foundational reusable UI components (e.g., Card, Button)
+- Establish a scalable folder structure for long-term development
+- Organize and manage assets (images, SVGs, etc.)
+
+---
+
+## Project Structure
+
+alx-listing-app/ ├── components/ │   └── common/ │       ├── Card.tsx        # Reusable property display card │       └── Button.tsx      # Reusable button component ├── constants/ │   └── index.ts            # Central place for app-wide constants ├── interfaces/ │   └── index.ts            # TypeScript interfaces (CardProps, ButtonProps, etc.) ├── pages/ │   └── index.tsx           # Main landing page ├── public/ │   └── assets/             # Static assets (images, SVGs, etc.) ├── styles/ │   └── globals.css         # TailwindCSS imports ├── tailwind.config.js      # TailwindCSS configuration ├── tsconfig.json           # TypeScript configuration ├── .eslintrc.json          # ESLint rules and configuration └── README.md               # Project overview and instructions
+
+---
+
+## Tech Stack
+
+- **Next.js (v13+)** – Framework for React with SSR capabilities
+- **TypeScript** – Static typing for JavaScript
+- **TailwindCSS** – Utility-first CSS framework
+- **ESLint** – Linting for code quality
+
+---
 
 ## Getting Started
 
-Hit the run button to start the development server.
+### Prerequisites
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Ensure you have the following installed:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on `/api/hello`. This endpoint can be edited in `pages/api/hello.ts`.
+- [Node.js](https://nodejs.org/) (v16+)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- Code editor like [VS Code](https://code.visualstudio.com/) with TailwindCSS and TypeScript extensions
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Installation
 
-## Learn More
+Clone the repository and install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git clone https://github.com/your-username/alx-listing-app.git
+cd alx-listing-app
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Running the Development Server
 
-## Productionizing your Next App
+npm run dev
 
-To make your next App run smoothly in production make sure to deploy your project with [Repl Deployments](https://docs.replit.com/hosting/deployments/about-deployments)!
+Open http://localhost:3000 to view the app in your browser.
 
-You can also produce a production build by running `npm run build` and [changing the run command](https://docs.replit.com/programming-ide/configuring-repl#run) to `npm run start`.
